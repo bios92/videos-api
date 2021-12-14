@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "node --require ts-node-dev/register ./node_modules/typeorm/cli.js",
-    "start": "node dist/server.js"
+    "start": "node /app/dist/server.js"
   },
   "dependencies": {
     "@types/uuid": "^8.3.3",
