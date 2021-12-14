@@ -4,7 +4,7 @@ const productionEnv = {
     entities: ['./dist/entities/*.js'],
     migrations: ['./dist/database/migrations/*.js'],
     cli: {
-      migrationsDir: './src/database/migrations',
+      migrationsDir: './dist/database/migrations',
     },
     ssl:
       process.env.NODE_ENV === 'production'
