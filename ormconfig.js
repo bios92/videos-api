@@ -1,3 +1,5 @@
+console.log("Process env", process.env.NODE_ENV)
+
 const productionEnv = {
     type: 'postgres',
     url: process.env.DATABASE_URL,
