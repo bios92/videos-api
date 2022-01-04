@@ -6,11 +6,11 @@ import { DeleteCategoryController } from "./controllers/category/DeleteCategoryC
 import { GetAllCategoriesController } from "./controllers/category/GetAllCategoriesController";
 import { UpdateCategoryController } from "./controllers/category/UpdateCategoryController";
 
-
 //Vídeos imports
 import { CreateVideoController } from "./controllers/videos/CreateVideoController";
 import { DeleteVideoController } from "./controllers/videos/DeleteVideoController";
 import { GetAllVideosController } from "./controllers/videos/GetAllVideosController";
+import { UpdateVideoController } from "./controllers/videos/UpdateVideoController";
 
 const routes = Router();
 
@@ -23,6 +23,7 @@ routes.put("/categories/:id", new UpdateCategoryController().handle);
 //Videos routes
 routes.post("/videos", new CreateVideoController().handle);
 routes.get("/videos", new GetAllVideosController().handle);
-routes.delete("/videos/:id", new DeleteVideoController().handle)
+routes.delete("/videos/:id", new DeleteVideoController().handle);
+routes.put("/videos", new UpdateVideoController().handle);
 
 export { routes };
